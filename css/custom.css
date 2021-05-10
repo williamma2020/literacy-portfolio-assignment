@@ -1,0 +1,40 @@
+* {
+    box-sizing:border-box;
+    /* border:1px solid red; */
+}
+
+ /* clearfix */
+
+ .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    background:lightgray;
+}
+
+.row{
+    justify-content: center;
+}
+
+/* .fs1{
+    font-size:x-large;
+} */
+
+.portfolio-buttons{
+    margin-top:auto;
+}
+
+.nav{
+    justify-content: center;
+}
+
+.copyright{
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-top: auto;
+}
+

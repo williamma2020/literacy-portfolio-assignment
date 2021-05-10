@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Literacy Portfolio Assignment</title>
@@ -8,13 +8,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+  
   </head>
 
-  <body id="home" data-spy="scroll" data-target=".navbar" date-offset="500">
+  <body id="home" data-spy="scroll" data-target=".navbar" date-offset="500"></body>
 
+  <header>
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
         <a class="navbar-brand order-1" target="_blank" href="https://webdesignerwilliamma.blogspot.com/">Web Design Solution</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,14 +34,18 @@
       </div>
       <!-- /container -->
     </nav>
+  </header>
 
+  <banner>
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-white pt-5">
       <div class="container text-sm-center">
         <h1 class="display-4 mt-4">Hello, my name is William, let's run together!</h1>
-        <img src="img/run.gif" alt="Drawing of William Ma" class="profile-image">
+        <img src="assets/img/run.gif" alt="Drawing of William Ma" class="profile-image">
         <figcaption class="mt-4 lead">“Run when you can, walk if you have to, crawl if you must; just never give up.”-Dean Karnazes
         </figcaption>
+        <p class="mt-4 lead">But remember: The most important thing in our life is to be kind to the people who we meet when we are chasing our dream. not achieve the dream itself.
+          -William Ma Feb.6th.2021 in Port Alberni BC.</p>
         <!-- callout buttons -->
         <!-- <div class="btn-group mt-4" role="group" aria-label="Callout Buttons" >
           <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Register Now</button>
@@ -49,10 +56,13 @@
 
       </div>
     </div>
+  </banner>
 
     <!-- /jumbotron -->
 
     <hr>
+
+  <main>
 
     <div class="container pt-4">
         <!-- about -->
@@ -60,7 +70,7 @@
 
           <div class="col-lg order-lg-2">
             <h3 class="mb-4 text-center">About Me</h3>
-            <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/portalberni.jpg" alt="Port Alberni">
+            <img class="mb-4 img-fluid rounded d-none d-sm-block" src="assets/img/portalberni.jpg" alt="Port Alberni">
             <p>I live at beautiful Port Alberni, look! this is Port Alberni Valley, my lovely home. I love swimming, snorkeling, play table tennis, hiking, architecture design.</p>
             
           </div>
@@ -86,10 +96,13 @@
     
         </div><!-- /about -->
 
-    <div class="container">
-      <!-- portfolio -->
+    <!-- treehouse portfolio -->  
+    <!-- <div class="container">
+   
       <h1 id="portfolio" class="display-4 text-center my-5 text-muted">Portfolio</h1>
+      
       <div class="row">
+
         <div class="col-md-6 col-lg-4">
           <div class="card mb-3">
             <img class="card-img-top" src="img/p1.jpeg" alt="p1">
@@ -112,7 +125,7 @@
       
         <div class="col-md-6 col-lg-4">
           <div class="card mb-3">
-            <img class="card-img-top" src="img/p3.jpeg" alt="p3">
+            <img class="card-img-top" src="img/p3.png" alt="p3">
             <div class="card-body">
               <h4 class="card-title">Project 3</h4>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -149,9 +162,128 @@
             </div>
           </div>
         </div>
-      </div><!-- /portfolio -->
-    </div><!-- /container -->
+      </div>
+
+    </div> -->
+    <!-- /container -->
+
+        <hr>
+        <!-- Portfolio-bootstrap-->
+        <div id="portfolio" class="container">
+          <div class="container-fluid p-0">
+              <h1 class="text-center mb-4">Portfolio</h1>
+              <div class="row gx-5">
+                  <div class="col-lg-4 col-sm-6 p-3 border bg-light card">
+                      <div class="portfolio-image">
+                          <a class="portfolio-box">
+                              <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.png" alt="..." />
+                              <div class="portfolio-box-caption">
+                                  <div class="project-category text-white-50">HTML & CSS</div>
+                                  <div class="project-name">An Online Registration Form</div>
+                              </div>
+                          </a>
+                      </div>
+                      <hr>
+                      <p>I have includes all of the required form fields in this project: text input, email input, telephone input, select menu, checkboxes, radio buttons, textfield, submit button. and used a mobile first approach and media query is set correct for tablet/desktop sized screens.</p>
+                      <div class="portfolio-buttons">
+                          <a class="btn btn-primary" target="_blank" href="https://github.com/williamma2020/Unit3-an-online-registration-form" role="button">Codes</a>
+                          <a class="btn btn-primary" target="_blank" href="https://williamma2020.github.io/Unit3-an-online-registration-form/" role="button">Preview</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 p-3 border bg-light card">
+                      <div class="portfolio-image">
+                          <a class="portfolio-box">
+                              <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.png" alt="..." />
+                              <div class="portfolio-box-caption">
+                                  <div class="project-category text-white-50">SASS</div>
+                                  <div class="project-name">Web Style Guide</div>
+                              </div>
+                          </a>
+                      </div>
+                      <hr>
+                      <p>I put all of the sass for the project is in a folder named “scss”, Variables are in a “utilities” sub-folder, Classes for styling the page are in a “components” sub-folder, The normalize.css file and element styles are in a “base” sub-folder sub- folders are imported into styles.scss file in correct order. Other than that, I uses Sass lighten() function to change the background color of buttons on hover, met exceeds.</p>
+                      <div class="portfolio-buttons">
+                          <a class="btn btn-primary" target="_blank" href="https://github.com/williamma2020/unit4-web-style-guide" role="button">Codes</a>
+                          <a class="btn btn-primary" target="_blank" href="https://williamma2020.github.io/unit4-web-style-guide/" role="button">Preview</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 p-3 border bg-light card">
+                      <div class="portfolio-image">
+                          <a class="portfolio-box">
+                              <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.png" alt="..." />
+                              <div class="portfolio-box-caption">
+                                  <div class="project-category text-white-50">HTML, CSS, JS</div>
+                                  <div class="project-name">An Interactive Photo Gallery</div>
+                              </div>
+                          </a>
+                      </div>
+                      <hr>
+                      <p>I made larger images appear when gallery thumbnail image is clicked. Background overlay hides the gallery and covers the entire window when displaying larger images. Images in lightbox include captions. Lightbox images can be navigated by clicking right and left arrows.The lightbox can be closed. Also, as the user types into the search box, only photos that match the caption text appear. Case insensitivity has been added so searches will ignore letter case. (using searchFilter.js)</p>
+                      <div class="portfolio-buttons">
+                          <a class="btn btn-primary" target="_blank" href="https://github.com/williamma2020/unit5-interactive-photo-gallery" role="button">Codes</a>
+                          <a class="btn btn-primary" target="_blank" href="https://williamma2020.github.io/unit5-interactive-photo-gallery/" role="button">Preview</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 p-3 border bg-light card">
+                      <div class="portfolio-image">
+                          <a class="portfolio-box">
+                              <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.png" alt="..." />
+                              <div class="portfolio-box-caption">
+                                  <div class="project-category text-white-50">JavaScript</div>
+                                  <div class="project-name">Game Show App</div>
+                              </div>
+                          </a>
+                      </div>
+                      <hr>
+                      <p>After lick the start button. I hide the homepage, and then, using the Math.random method, get random array letters in order to display when user click the keyboard. And then, Built the checkLetter function, and handling the "show" class! No letter can be clicked twice and your "click" event handler correctly only targets the qwerty buttons. Other than that, I also set the reset button when the game over, user don’t have to refresh the browser.</p>
+                      <div class="portfolio-buttons">
+                          <a class="btn btn-primary" target="_blank" href="https://github.com/williamma2020/unit6-game-show-app" role="button">Codes</a>
+                          <a class="btn btn-primary" target="_blank" href="https://williamma2020.github.io/unit6-game-show-app/" role="button">Preview</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 p-3 border bg-light card">
+                      <div class="portfolio-image">
+                          <a class="portfolio-box">
+                              <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.png" alt="..." />
+                              <div class="portfolio-box-caption">
+                                  <div class="project-category text-white-50">HTML, CSS, JS</div>
+                                  <div class="project-name">WebApp Dashboard</div>
+                              </div>
+                          </a>
+                      </div>
+                      <hr>
+                      <p>This is a very complex project with a lot of different pieces and bring together all of HTML, CSS and Javascript skills for one project. I figured out Alert Notifications, Chart Widgets, Social Network Information, New Members and Recent Activity Listing, also the Settings Widget.</p>
+                      <div class="portfolio-buttons">
+                          <a class="btn btn-primary" target="_blank" href="https://github.com/williamma2020/unit7-webApp-dashboard" role="button">Codes</a>
+                          <a class="btn btn-primary" target="_blank" href="https://williamma2020.github.io/unit7-webApp-dashboard/" role="button">Preview</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 p-3 border bg-light card">
+                      <div class="portfolio-image">
+                          <a class="portfolio-box">
+                              <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.png" alt="..." />
+                              <div class="portfolio-box-caption p-3">
+                                  <div class="project-category text-white-50">JavaScript</div>
+                                  <div class="project-name">Use an API to Create an Employee Directory</div>
+                              </div>
+                          </a>
+                      </div>
+                      <hr>
+                      <p>Fetch to request 12 random users from the API, new random employee information displays each time the page refreshes. in the modal window displays employee imageName, email, cell number, address…all the detail information show up, and there is a way to close the modal window. </p>
+                      <div class="portfolio-buttons">
+                          <a class="btn btn-primary" target="_blank" href="https://github.com/williamma2020/unit8-employee-directory" role="button">Codes</a>
+                          <a class="btn btn-primary" target="_blank" href="https://williamma2020.github.io/unit8-employee-directory/" role="button">Preview</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- end of portfolio bootstrap -->
+      
+      <hr>
         <!-- schedule -->
+      <div class="container">
         <h1 id="schedule" class="display-4 text-center my-5 text-muted">My Daily Schedule</h1>
         <ul class="list-group">
           <li class="list-group-item">
@@ -204,16 +336,18 @@
             <p class="mb-1">HTML, CSS, JavaScript</p>
           </li>        
         </ul><!-- /schedule -->
+      </div>
 
         <!-- callout button -->
         <button type="button" class="btn btn-outline-info d-block btn-lg mx-auto my-5 bg-light" data-toggle="modal" data-target="#exampleModal">Leave your contact? click here</button>
       
         <!-- signup form -->
         <hr>
+      <div class="container">
         <div class="container row py-4 text-muted">
           <div class="col-md col-xl-5">
-              <p><strong>About Treehouse</strong></p>
-              <p>Treehouse brings affordable technology education to people everywhere to help them achieve their dreams and change the world.They have a great support team: slack.com who are the reason I stay with Treehouse class.</p>
+              <p><strong>Advertising</strong></p>
+              <p>Treehouse brings affordable technology education to people everywhere to help them achieve their dreams and change the world. and they have a great support team: slack.com.</p>
           </div>
           <div class="col-md col-xl-5 ml-auto">
               <p><strong>Stay up-to-date on my portfolio?</strong></p>
@@ -238,46 +372,49 @@
 
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header bg-info text-white">
-            <h5 class="modal-title" id="exampleModalLabel">Your Contact Info</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <!-- <h5 class="mb-4">Basic Info</h5> -->
-              <div class="form-group">
-                <label class="form-control-label" for="name">name</label>
-                <input type="text" class="form-control" id="name">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-info text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Your Contact Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-              <div class="form-group">
-                <label class="form-control-label" for="email">email</label>
-                <input type="text" class="form-control" id="email">
+              <div class="modal-body">
+                <form>
+                  <!-- <h5 class="mb-4">Basic Info</h5> -->
+                  <div class="form-group">
+                    <label class="form-control-label" for="name">name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" for="email">email</label>
+                    <input type="text" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="role">Job Role</label>
+                    <select class="custom-select form-control" id="role">
+                      <option value="full stack js developer">Full Stack JavaScript Developer</option>
+                      <option value="front end developer">Front End Developer</option>
+                      <option value="back end developer">Back End Developer</option>
+                      <option value="designer">Designer</option>
+                      <option value="student">Employer</option> 
+                    </select>
+                  </div>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="role">Job Role</label>
-                <select class="custom-select form-control" id="role">
-                  <option value="full stack js developer">Full Stack JavaScript Developer</option>
-                  <option value="front end developer">Front End Developer</option>
-                  <option value="back end developer">Back End Developer</option>
-                  <option value="designer">Designer</option>
-                  <option value="student">Employer</option> 
-                </select>
-              </div>
-            </form>
-          </div>
 
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+    </main>
 
     <!-- footer -->
-    <div class="row py-3">
-
-      <div class="col-md-7">
+    <!-- <div class="row py-3"> -->
+    <footer>
+      <div>
           <ul class="nav">
               <li class="nav-item">
                   <a class="nav-link"  target="_blank" href="https://www.linkedin.com/in/williamma2004"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -313,15 +450,25 @@
           </ul>
       </div>
 
-      <!-- <div class="col-md text-md-right"> -->
+      <div class="col-md text-sm-center">
         <small class="copyright">&copy; 2021 Portfolio WilliamMa</small>
-      <!-- </div> -->
+      </div>
+    </footer>
+  <!-- </div> -->
+  <!-- /footer -->
 
-  </div><!-- /footer -->
 
 
 
-    <!-- Optional JavaScript -->
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
