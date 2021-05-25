@@ -31,10 +31,36 @@ body{
     justify-content: center;
 }
 
+.page-section{
+    padding:2em 0;
+}
+
 .copyright{
     justify-content: center;
     text-align: center;
     margin-left: auto;
     margin-top: auto;
 }
+
+.display-4{
+    padding:0;
+}
+
+.mt-4{
+    width:30%;
+}
+
+.layout{
+    display:flex;
+}
+
+.position{
+    width:100%;
+}
+
+.runner{
+    width:40%;
+    padding:0 15px;
+}
+
 
