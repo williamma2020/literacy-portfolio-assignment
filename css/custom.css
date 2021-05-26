@@ -42,25 +42,33 @@ body{
     margin-top: auto;
 }
 
-.display-4{
-    padding:0;
+@media (min-width:1024px){
+
+    .display-4{
+        padding:0;
+    }
+
+    .mt-4{
+        width:30%;
+    }
+
+    .layout{
+        display:flex;
+    }
+
+    .position{
+        width:100%;
+    }
+
+    .runner{
+        width:40%;
+        padding:0 15px;
+    }
+
 }
 
-.mt-4{
-    width:30%;
-}
 
-.layout{
-    display:flex;
-}
 
-.position{
-    width:100%;
-}
 
-.runner{
-    width:40%;
-    padding:0 15px;
-}
 
 
