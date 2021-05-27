@@ -42,6 +42,35 @@ body{
     margin-top: auto;
 }
 
+
+    
+/* The animation code */
+@keyframes greeting {
+    0%   {background-color:#FFFFFF; left:0px; top:0px;}
+    25%  {background-color:#FFFFFF; left:200px; top:0px;}
+    50%  {background-color:#FFFFFF; left:200px; top:200px;}
+    75%  {background-color:#FFFFFF; left:0px; top:200px;}
+    100% {background-color:#FFFFFF; left:0px; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+.greeting{
+    font-family:cursive;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: #FFFFFF;
+    animation-name: greeting;
+    animation-duration: 4s;
+  }
+
+.lead{
+    font-family:cursive;
+}
+
+
+
+
 @media (min-width:1024px){
 
     .display-4{
@@ -58,6 +87,7 @@ body{
 
     .position{
         width:100%;
+    
     }
 
     .runner{
@@ -65,7 +95,15 @@ body{
         padding:0 15px;
     }
 
+
+    .card{
+        max-width:30%;
+        margin:5px;
+    }
+
 }
+
+
 
 
 
