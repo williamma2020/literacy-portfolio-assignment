@@ -12,11 +12,22 @@
 }
 
 body{
-    background:lightgray;
+    background:lightsteelblue;
+}
+
+h1,
+h3{
+   color: white;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .row{
     justify-content: center;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
 }
 
 /* .fs1{
@@ -35,6 +46,12 @@ body{
     padding:2em 0;
 }
 
+.card{
+    /* width: 250px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
 .copyright{
     justify-content: center;
     text-align: center;
@@ -43,29 +60,16 @@ body{
 }
 
 
+
     
-/* The animation code */
-@keyframes greeting {
-    0%   {background-color:#FFFFFF; left:0px; top:0px;}
-    25%  {background-color:#FFFFFF; left:200px; top:0px;}
-    50%  {background-color:#FFFFFF; left:200px; top:200px;}
-    75%  {background-color:#FFFFFF; left:0px; top:200px;}
-    100% {background-color:#FFFFFF; left:0px; top:0px;}
-  }
-  
-  /* The element to apply the animation to */
-.greeting{
-    font-family:cursive;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: #FFFFFF;
-    animation-name: greeting;
-    animation-duration: 4s;
-  }
+
 
 .lead{
     font-family:cursive;
+}
+
+.col-md{
+    text-align:center;
 }
 
 
@@ -101,7 +105,34 @@ body{
         margin:5px;
     }
 
+    /* The animation code */
+    @keyframes greeting {
+        0%   {background-color:#FFFFFF; left:0px; top:0px;}
+        25%  {background-color:#FFFFFF; left:200px; top:0px;}
+        50%  {background-color:#FFFFFF; left:200px; top:200px;}
+        75%  {background-color:#FFFFFF; left:0px; top:200px;}
+        100% {background-color:#FFFFFF; left:0px; top:0px;}
+    }
+    
+    /* The element to apply the animation to */
+    .greeting{
+        font-family:cursive;
+        height: 100px;
+        position: relative;
+        background-color: #FFFFFF;
+        animation-name: greeting;
+        animation-duration: 2s;
+    }
+
+    .cap{
+        margin-left:auto;
+    }
+
 }
+
+
+
+/* styles.css line 100 and 4545 turned off */
 
 
 

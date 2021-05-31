@@ -13,46 +13,59 @@
   
   </head>
 
-  <body id="home" data-spy="scroll" data-target=".navbar" date-offset="500"></body>
+  <body id="home">
 
   <header>
     <!-- navbar -->
-    <nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-      <div class="container">
-        <a class="navbar-brand order-1" target="_blank" href="https://webdesignerwilliamma.blogspot.com/">Web Design Solution</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+      
+  
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" aria-current="page" href="#home">Home</a>
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#portfolio">Portfolio</a>
             <a class="nav-link" href="#contact">Contact</a>
-            <!-- <a class="nav-link" href="#schedule" tabindex="-1" aria-disabled="true">Schedule</a> -->
           </div>
-        </div>
-      </div>
+        </div> -->
+          <!-- Navigation-->
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary" id="mainNav">
+            <div class="container">
+              <a class="navbar-brand order-1 cap" target="_blank" href="https://webdesignerwilliamma.blogspot.com/">Web Design Solution</a>
+              <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a> -->
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+            </div>
+        </nav>
+   
       <!-- /container -->
-    </nav>
+ 
   </header>
 
-  <banner>
+
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-white pt-5">
       <div class="container text-sm-center layout">
         <h1 class="display-4 mt-4 greeting">Hello, my name is William, let's run together!</h1>
         <div class="runner">
           <img src="assets/img/run.gif" alt="animated cartoon boy runing" class="profile-image">
-          <figcaption class="mt-4 lead position">“Run when you can, walk if you have to, crawl if you must; just never give up.”-Dean Karnazes
-          </figcaption>
+          <span class="mt-4 lead position">“Run when you can, walk if you have to, crawl if you must; just never give up.”-Dean Karnazes
+          </span>
         </div>
         <p class="mt-4 lead">The most important thing in our life is to be kind to the people who we meet when we are chasing our dream. not achieve the dream itself.
           -William Ma Feb.6th.2021 in Port Alberni BC.</p>
-
       </div>
     </div>
-  </banner>
+ 
 
     <!-- /jumbotron -->
 
@@ -65,7 +78,7 @@
         <div id="about" class="row">
 
           <div class="col-lg order-lg-2">
-            <h3 class="mb-4 text-center">About Me</h3>
+            <h1 class="mb-4 text-center">About</h1>
             <img class="mb-4 img-fluid rounded d-none d-sm-block" src="assets/img/portalberni.jpg" alt="Port Alberni">
             <p>I live at beautiful Port Alberni, look! this is Port Alberni Valley, my lovely home. I love swimming, snorkeling, play table tennis, hiking, architecture design.</p>
             
@@ -84,7 +97,6 @@
             <li><strong>HTML</strong>: Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.</li>
             <li><strong>CSS</strong>: Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. </li>
             <li><strong>JavaScript</strong>: JavaScript is a scripting or programming language that allows you to implement complex features on web pages.</li>
-
             </ul>
           </div>
 
@@ -252,20 +264,19 @@
 
             </div>
           </div>
-        </div>
+        
       </div>
 
     </main>
 
-    <!-- footer -->
-    <!-- <div class="row py-3"> -->
+
     <footer>
         <!-- Contact-->
         <section class="page-section contact" id="contact">
           <div class="container">
               <div class="row justify-content-center">
                   <div class="col-lg-8 text-center">
-                      <h2 class="mt-0">Let's Get In Touch!</h2>
+                      <h1 class="mt-0">Let's Get In Touch!</h1>
                       <hr class="divider my-4" />
                       <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you ASAP!</p>
                   </div>
@@ -324,8 +335,6 @@
         <small class="copyright">&copy; 2021 Portfolio WilliamMa</small>
       </div>
     </footer>
-  <!-- </div> -->
-  <!-- /footer -->
 
 
 
@@ -333,9 +342,11 @@
     <!-- Bootstrap core JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
@@ -343,5 +354,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  
   </body>
 </html>
