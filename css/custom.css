@@ -15,7 +15,7 @@ body{
     background:rgb(153, 189, 233);
 }
 
-
+/* jumbotron styles start*/
 
 h1,
 h3{
@@ -28,6 +28,11 @@ h3{
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     font-size:x-large;
     text-align:center;
+    transition: all .2s ease-in-out;
+}
+
+.inspi:hover{
+    transform: scale(1.2); 
 }
 
 .creed{
@@ -35,12 +40,32 @@ h3{
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     font-size:x-large;
     text-align:center;
+    transition: all .2s ease-in-out;
+}
+
+.creed:hover { 
+    transform: scale(1.2); 
 }
 
 
 .greeting{
     text-align:center;
+    transition: all .2s ease-in-out;
 }
+
+.greeting:hover { 
+    transform: scale(1.2); 
+}
+
+.profile-image{
+    transition: all .2s ease-in-out;
+}
+
+.profile-image:hover{
+    transform: scale(1.2); 
+}
+
+/* jumbotron styles end */
 
 
 
@@ -73,6 +98,19 @@ h3{
     text-align: center;
 }
 
+/* portfolio end */
+
+
+/* contact start */
+
+.mt-0{
+    transition: all .2s ease-in-out;
+}
+
+.mt-0:hover{
+    transform: scale(1.2); 
+}
+
 .copyright{
     justify-content: center;
     text-align: center;
@@ -82,9 +120,6 @@ h3{
 
 
 
-    
-
-
 .lead{
     font-family:cursive;
 }
@@ -92,6 +127,8 @@ h3{
 .col-md{
     text-align:center;
 }
+
+/* contact end */
 
 
 @media (min-width:768px){
