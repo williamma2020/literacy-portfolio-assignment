@@ -25,9 +25,9 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">Contact</a></li>
             </ul>
         </div>
       </div>
@@ -46,24 +46,71 @@
           <div class="container-fluid p-0">
               <h1 class="text-center mb-4">Web Style Guide</h1>
               <div class="row gx-5">
-                <div class="p-3 border bg-light">
-                    <div class="portfolio-image">
+                    <div class="p-3 border bg-light">
+                      <div class="portfolio-image">
                         <a class="portfolio-box" target="_blank" href="https://williamma2020.github.io/unit4-web-style-guide/">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.png" alt="..." />
+                            <img class="img-fluid" src="../assets/img/portfolio/thumbnails/2.png" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">SASS</div>
                                 <div class="project-name">Web Style Guide</div>
                             </div>
                         </a>
                     </div>
-                    <hr>
-                    <p>I put all of the sass for the project is in a folder named “scss”, Variables are in a “utilities” sub-folder, Classes for styling the page are in a “components” sub-folder, The normalize.css file and element styles are in a “base” sub-folder sub- folders are imported into styles.scss file in correct order. Other than that, I uses Sass lighten() function to change the background color of buttons on hover, met exceeds.</p>
-                    <div class="portfolio-buttons">
-                        <a class="btn btn-primary" target="_blank" href="https://github.com/williamma2020/unit4-web-style-guide" role="button">Codes</a>
-                        <a class="btn btn-primary" target="_blank" href="https://williamma2020.github.io/unit4-web-style-guide/" role="button">Preview</a>
-                    </div>
-                </div>
+                        <hr>
+                        <p>In this project, I followed study guide below:</p>
+                        <p>1. Create your scss directory and styles.scss file.</p>
+                        <p>Create an scss folder inside of your project's root folder. All of your scss partial files, including sub-folders to organize them will go in here.</p>
+                        <p>Create a styles.scss file inside of your newly created scss folder.</p>
+                        <p>2. Create your partial sub-folders inside the scss directory. </p>
+                        <p>Create a utilities folder inside of your scss folder.</p>
+                        <p>Create a base folder inside of your scss folder.</p>
+                        <p>Create a components folder inside of your scss folder. </p>
+                        <p>3. Create your partial files inside the partial sub-folders. </p>
+                        <p>The utilities folder:</p>
+                        <p>Create an _index.scss file inside of your utilities folder.</p>
+                        <p>Create a _variables.scss file inside of your utilities folder.</p>
+                        <p>Create a _mixins.scss file inside of your utilities folder</p>
+                        <p>The base folder:</p>
+                        <p>Create an _index.scss file inside of your base folder.</p>
+                        <p>Copy the normalize.css file from the resources/css/ folder and paster it into the base folder, then rename it to _normalize.scss.</p>
+                        <p>Create a _typogrphy.scss file inside of your base folder.</p>
+                        <p>The components folder:</p>
+                        <p>Create an_index.scss file inside of your components folder.</p>
+                        <p>Create a _grid.scss file inside of your components folder.</p>
+                        <p>Create a _navigation.scss file inside of your component folder.</p>
+                        <p>Create a _buttons.scss file inside of your component folder.</p>
+                        <p>Create a _forms.scss file inside of your component folder.</p>
+                        <p>Create a _images.scss file inside of your component folder.</p>
+                        <p>Create a _media-queries.scss file inside of your component folder.</p>
+                        <p>4. Import the individual files in each partial folder via the _index.scss files.</p>
+                        <p>The utilities folder _index.scss:</p>
+                        <p>Open the _index.scss file inside of your utilities folder. </p>
+                        <p>Copy and paste the code below into the _index.scss file:</p>
+                        <p>@import 'variables'; @import 'mixins';</p>
+                        <p>The base folder _index.scss:</p>
+                        <p>Open the _index.scss file inside of your base folder.</p>
+                        <p>Copy and paste the code below into the _index.scss file:</p>
+                        <p>@import 'normalize'; @import 'typography'</p>
+                        <p>The components folder _index.scss:</p>
+                        <p>Open the _index.scss file inside of your components folder.</p>
+                        <p>Copy and paste the code below into the _index.scss file:</p>
+                        <p>@import 'buttons'; @import 'forms'; @import 'navigation'; @import 'images'; 
+                          @import 'grid';@import 'media-queries'</p>
+                        <p>The scss folder styles.scss:</p>
+                        <p>Open the styles.scss file inside of your scss folder.</p>
+                        <p>Copy and paste the code below into the styles.scss file:</p>
+                        <p>@import 'utilities/index'; @import 'base/index'; </p>
+                        <p>5.Use built in Sass function to add hover effect.</p>
+                        <p>Created a hover effect for buttons.</p>
+                        <p>For the effect, lighten the button's background color by 15%.</p>
+                        <p>Add a CSS transition so that the color change fades in.</p>
 
+
+                        <div class="portfolio-buttons">
+                            <a class="btn btn-primary" target="_blank" href="https://github.com/williamma2020/unit4-web-style-guide" role="button">Codes</a>
+                            <a class="btn btn-primary" target="_blank" href="https://williamma2020.github.io/unit4-web-style-guide/" role="button">Preview</a>
+                        </div>
+                    </div>
                   
                   </div>
               </div>
