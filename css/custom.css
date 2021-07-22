@@ -13,6 +13,7 @@
 
 body{
     background:rgb(153, 189, 233);
+    overflow-x:hidden;
 }
 
 /* jumbotron styles start*/
@@ -129,6 +130,14 @@ h3{
     text-align:center;
 }
 
+.text-muted {
+    color: white;
+  }
+
+a {
+    color: #212529;
+}
+
 /* contact end */
 
 
@@ -195,9 +204,9 @@ h3{
         animation-duration: 2s;
     }
 
-    .blog{
+    /* .blog{
         margin-left:auto;
-    }
+    } */
 
 }
 
