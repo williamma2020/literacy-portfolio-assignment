@@ -134,8 +134,12 @@ h3{
     color: white;
   }
 
-a {
+/* a {
     color: #212529;
+} */
+
+a {
+    color:blue;
 }
 
 /* contact end */
